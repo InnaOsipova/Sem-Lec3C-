@@ -3,11 +3,30 @@
 
 string ShowCoord ( int number)
 {
-    if (number == 1) return " x > 0 и у >0";
-    if (number == 2) return " x < 0 и у >0";
-    if (number == 3) return " x < 0 и у <0";
-    if (number == 4) return " x > 0 и у < 0";
-    return " нули";
+    switch (number)
+    {
+        case  1: 
+        {
+            return " x > 0 и у >0";
+            
+        }
+        case 2: 
+         {   
+            return " x < 0 и у >0";
+            
+         }
+        case  3: 
+         {   
+            return " x < 0 и у <0";
+            
+         }
+        case  4: 
+        {
+            return " x > 0 и у < 0";
+            
+        }
+    }
+    return "ошибка";
 }
 
 Console.Write ("Введите номер четверти : ");
